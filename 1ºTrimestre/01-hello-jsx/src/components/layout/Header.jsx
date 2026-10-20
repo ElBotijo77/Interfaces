@@ -1,12 +1,21 @@
 import { Button } from "@/components/ui/button";
-import logo from "@/assets/Logo.png";
+import { useScroll } from "@/hooks/useScroll";
+import { cn } from "@/lib/utils";
+import logo from "@/assets/logo-lema.png";
 
 export function Header() {
+  const conScroll = useScroll(); // true = el contenido pasa por debajo
+
   return (
-    <header className="col-span-4 min-h-[15vh] flex items-center justify-between gap-4 border-b">
+    <header
+      className={cn(
+        "col-span-4 flex items-center justify-between gap-16 sticky top-0 z-10 bg-background -mx-8 -mt-8 px-14 py-4 transition-shadow",
+        conScroll && "shadow-md",
+      )}
+    >
       {/* Izquierda: logo y nombre */}
       <a href="/" className="flex items-center gap-3">
-        <img src={logo} alt="Logo" className="h-12 w-auto" />
+        <img src={logo} alt="Acompana" className="h-24 w-auto" />
       </a>
 
       {/* Centro: navegación */}
