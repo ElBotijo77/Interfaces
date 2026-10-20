@@ -1,3 +1,4 @@
+import { MenuPrincipal } from "@/components/layout/MenuPrincipal";
 import { PerfilUsuario } from "@/components/layout/PerfilUsuario";
 import { useScroll } from "@/hooks/useScroll";
 import { cn } from "@/lib/utils";
@@ -19,7 +20,7 @@ export function Header() {
       </a>
 
       {/* Centro: navegación */}
-      <nav className="hidden md:flex items-center gap-6"></nav>
+      <MenuPrincipal className="hidden md:flex" />
 
       {/* Derecha: acciones */}
       <PerfilUsuario />
