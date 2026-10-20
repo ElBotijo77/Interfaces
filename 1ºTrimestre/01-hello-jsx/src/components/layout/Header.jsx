@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button";
+import { PerfilUsuario } from "@/components/layout/PerfilUsuario";
 import { useScroll } from "@/hooks/useScroll";
 import { cn } from "@/lib/utils";
 import logo from "@/assets/logo-lema.png";
@@ -22,9 +22,7 @@ export function Header() {
       <nav className="hidden md:flex items-center gap-6"></nav>
 
       {/* Derecha: acciones */}
-      <div className="flex items-center gap-3">
-        <Button>Vista cuidador</Button>
-      </div>
+      <PerfilUsuario />
     </header>
   );
 }
