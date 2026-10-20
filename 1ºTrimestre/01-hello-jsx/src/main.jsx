@@ -1,6 +1,7 @@
 import { createRoot } from "react-dom/client";
 import "./index.css";
 import { Header } from "@/components/layout/Header";
+import { BotonSubir } from "@/components/layout/BotonSubir";
 import { MedicacionCard } from "@/components/MedicacionCard";
 import { 
   Clase, 
@@ -30,6 +31,8 @@ createRoot(document.getElementById("root")).render(
     </aside>
 
     <footer className="col-span-4"></footer>
+
+    <BotonSubir />
   </main>,
 );
 
