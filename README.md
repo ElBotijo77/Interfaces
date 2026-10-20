@@ -8,7 +8,9 @@ Repositorio con los apuntes, ejercicios y proyectos de la asignatura Diseño de 
 
 ## Tecnologías
 
-`Jetpack Compose` `Figma`
+`Vite` `React` `Jetpack Compose` `Figma`
+
+Los proyectos web se crean con [Vite](https://vite.dev/) + [React](https://react.dev/).
 
 ## Procedimiento
 
