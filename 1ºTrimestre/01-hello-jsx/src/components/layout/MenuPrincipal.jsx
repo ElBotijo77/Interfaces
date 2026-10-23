@@ -1,4 +1,4 @@
-import { Bell, CalendarDays, House, Pill } from "lucide-react";
+import { Bell, CalendarDays, House, Pill, School } from "lucide-react";
 import {
   NavigationMenu,
   NavigationMenuItem,
@@ -14,6 +14,7 @@ const opciones = [
   { texto: "Tratamiento", ruta: "/medicacion", icono: <Pill className="size-6" /> },
   { texto: "Calendario", ruta: "/calendario", icono: <CalendarDays className="size-6" /> },
   { texto: "Recordatorios", ruta: "/recordatorios", icono: <Bell className="size-6" /> },
+  { texto: "Clase", ruta: "/clase", icono: <School className="size-6" /> }
 ];
 
 export function MenuPrincipal({ className }) {
