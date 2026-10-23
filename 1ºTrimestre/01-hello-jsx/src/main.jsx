@@ -1,13 +1,12 @@
 import { createRoot } from "react-dom/client";
 import "./index.css";
-import { Button } from "@/components/ui/button";
-import { Label } from "@/components/ui/label";
+import { Header } from "@/components/layout/Header";
+import { BotonSubir } from "@/components/layout/BotonSubir";
 import { MedicacionCard } from "@/components/MedicacionCard";
 import { 
   Clase, 
   ManejadorEventos 
 } from "@/components/Clase";
-import logo from "@/assets/Logo.png";
 
 const tarjetas = [
   { nombre: "Ibuprofeno", frecuencia: "Cada 8 horas", descripcion: "Mañana y tarde" },
@@ -19,14 +18,7 @@ const tarjetas = [
 
 createRoot(document.getElementById("root")).render(
   <main className="min-h-screen p-8 grid grid-cols-4 gap-6 content-start">
-    <header className="col-span-4 min-h-[15vh] flex items-center gap-4">
-      <p>
-        Hello, <strong>JSX</strong>
-      </p>
-      <Button>Vista cuidador</Button>
-      <Label>Prueba</Label>
-      <img src={logo} alt="Logo" className="h-12 w-auto" />
-    </header>
+    <Header />
 
     <section className="col-span-3 grid grid-cols-3 gap-6">
       {tarjetas.map((m) => (
@@ -39,6 +31,8 @@ createRoot(document.getElementById("root")).render(
     </aside>
 
     <footer className="col-span-4"></footer>
+
+    <BotonSubir />
   </main>,
 );
 
